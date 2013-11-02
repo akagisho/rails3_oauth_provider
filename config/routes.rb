@@ -10,6 +10,12 @@ Oauthp::Application.routes.draw do
 
   root to: redirect("/oauth_clients")
 
+  namespace :api do
+    namespace :v1 do
+      get "/foo" => "foo#index"
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
