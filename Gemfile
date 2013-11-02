@@ -36,3 +36,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'devise'
+gem 'oauth-plugin'
+gem 'dynamic_form' # for error_messages_for
