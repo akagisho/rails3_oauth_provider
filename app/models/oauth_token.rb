@@ -1,4 +1,5 @@
 class OauthToken < ActiveRecord::Base
+  attr_accessible :client_application, :user, :scope, :callback_url
   belongs_to :client_application
   belongs_to :user
   validates_uniqueness_of :token

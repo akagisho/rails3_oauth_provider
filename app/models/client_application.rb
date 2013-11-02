@@ -1,5 +1,6 @@
 require 'oauth'
 class ClientApplication < ActiveRecord::Base
+  attr_accessible :name, :url, :callback_url, :support_url
   belongs_to :user
   has_many :tokens, :class_name => "OauthToken"
   has_many :access_tokens
